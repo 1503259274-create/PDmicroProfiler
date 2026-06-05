@@ -1,4 +1,3 @@
-````markdown
 # PDmicroProfiler
 
 <p align="center">
@@ -339,20 +338,3 @@ For questions, bug reports, or suggestions, please open an issue on GitHub:
 
 ```text
 https://github.com/1503259274-create/PDmicroProfiler/issues
-```
-
-````
-
----
-
-你现在的操作是：
-
-1. 点击 `README.md` 右上角铅笔；
-2. 全选原来的 README 内容；
-3. 粘贴上面这一版；
-4. `Commit message` 写：
-
-```text
-Update README with detailed package documentation
-````
-

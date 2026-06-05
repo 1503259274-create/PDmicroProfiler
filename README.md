@@ -31,17 +31,6 @@ The package supports:
 devtools::install_github("1503259274-create/PDmicroProfiler")
 ```
 
----
-
-## Workflow
-
-The workflow of PDmicroProfiler is shown below.
-
-<p align="center">
-  <img src="PDmicroProfiler_README_workflow.png" width="1200">
-</p>
-
----
 
 ## Main Functionalities
 

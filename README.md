@@ -154,87 +154,24 @@ plot_family_function(
 
 ---
 
-### 5. Generate a phage family dashboard
+### 4. Bacteria–phage network analysis
+
+Load the built-in bacteria–phage interaction network, extract Streptococcus-associated edges, and visualize the corresponding interaction network.
 
 ```r
-phage_family_dashboard(
-  family = "Siphoviridae"
-)
-```
+data("interaction_edges_HC")
 
-The dashboard summarizes genome length distribution, host distribution, lifestyle, host specialization, and novelty status for a selected phage family.
-
----
-
-### 6. Query vOTU information
-
-```r
-votu_info <- get_votu_info(
-  votu_id = "DRR480285__12620"
+strepto_edges <- subset(
+  interaction_edges_HC,
+  grepl("Streptococcus", Source)
 )
 
-votu_info
-```
+head(strepto_edges)
 
----
-
-### 7. Visualize vOTU functional annotations
-
-```r
-plot_votu_function(
-  votu_id = "DRR480285__12620"
+plot_interaction_network(
+  strepto_edges,
+  title = "Streptococcus phage interaction network"
 )
-```
-
-This function generates a bubble plot showing KEGG Ortholog annotations associated with a selected vOTU.
-
----
-
-### 8. Visualize family-level viral functions
-
-```r
-plot_family_function(
-  family = "Myoviridae",
-  top_n = 10
-)
-```
-
-This function summarizes the most frequent KEGG Ortholog annotations in a selected viral family.
-
----
-
-### 9. Visualize differential pathways
-
-```r
-plot_diff_pathway()
-```
-
-This function compares pathways associated with PD-enriched and HC-enriched vOTUs.
-
----
-
-### 10. Explore bacteria–phage interactions
-
-```r
-interactions <- find_phage_host_interactions(
-  target = "Streptococcus",
-  group = "PD",
-  cor_cutoff = 0.5
-)
-
-head(interactions)
-```
-
-Generate an interactive network:
-
-```r
-plot_interaction_network(interactions)
-```
-
-Generate a static network:
-
-```r
-plot_interaction_network_static(interactions)
 ```
 
 ---

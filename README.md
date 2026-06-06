@@ -111,7 +111,7 @@ plot_microbe_abundance(
   type = "bacteria",
   area = "USA"
 )
-
+```
 ---
 
 ### 3. Explore viral family abundance

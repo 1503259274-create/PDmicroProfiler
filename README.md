@@ -322,19 +322,3 @@ A formal citation will be added after publication.
 
 This project is licensed under the MIT License.
 
----
-
-## Notes
-
-PDmicroProfiler is designed for exploratory analysis and visualization of processed PD-associated gut bacteriome and virome resources.
-
-Phage-host links and bacteria–phage interaction networks are based on computational inference and should be interpreted as hypothesis-generating evidence. Experimental validation is recommended for biological interpretation of specific phage-host relationships.
-
----
-
-## Contact
-
-For questions, bug reports, or suggestions, please open an issue on GitHub:
-
-```text
-https://github.com/1503259274-create/PDmicroProfiler/issues

@@ -114,21 +114,21 @@ plot_microbe_abundance(
 ```
 ---
 
-### 2. Phage database exploration
+### 2. Phage family dashboard
 
-Query phages associated with a selected bacterial host taxon and summarize their family, lifestyle, specialization, and novelty profiles.
+Summarize and visualize the characteristics of a selected phage family.
 
 ```r
-result <- query_by_host(
-  host_level = "Host.Phylum",
-  host_value = "Firmicutes"
+family_info <- get_family_info(
+  family_name = "Siphoviridae"
 )
 
-head(result)
+head(family_info)
 
-plot_phage_summary(
-  data = result,
-  plot_type = "pie"
+phage_family_dashboard(
+  family_name = "Siphoviridae",
+  host_level  = "Host.Phylum",
+  top_n       = 10
 )
 ```
 

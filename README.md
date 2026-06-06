@@ -37,18 +37,18 @@ PDmicroProfiler was developed from an integrated multi-cohort metagenomic analys
 
 ## Installation
 
-You can install the development version of **PDmicroProfiler** from GitHub:
-
-```r
-# install.packages("devtools")
-devtools::install_github("1503259274-create/PDmicroProfiler")
-````
-
-Alternatively:
+You can install the development version of **PDmicroProfiler** from GitHub using `remotes`:
 
 ```r
 # install.packages("remotes")
 remotes::install_github("1503259274-create/PDmicroProfiler")
+````
+
+Alternatively，you can use devtools:
+
+```r
+# install.packages("devtools")
+devtools::install_github("1503259274-create/PDmicroProfiler")
 ```
 
 Load the package:
@@ -310,13 +310,17 @@ PDmicroProfiler/
 
 ## Citation
 
-If you use **PDmicroProfiler** in your research, please cite:
+If you use **PDmicroProfiler** in your research, please cite the R package:
 
-> Integrated Metagenomics Tool PDmicroProfiler: A Novel R Package for Efficient Profiling of Gut Bacterial and Viral Signatures in Parkinson's Disease.
-
-A formal citation will be added after publication.
-
----
+```bibtex
+@software{PDmicroProfiler,
+  author = {Jiale Liu and WeiHou},
+  title = {Integrated Metagenomics Tool PDmicroProfiler: A Novel R Package for Efficient Profiling of Gut Bacterial and Viral Signatures in Parkinson's Disease},
+  year = {2026},
+  url = {https://github.com/1503259274-create/PDmicroProfiler},
+  version = {0.1.0}
+}
+```
 
 ## License
 

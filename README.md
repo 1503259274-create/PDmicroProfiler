@@ -100,6 +100,7 @@ abund_df <- get_microbe_abundance(
 )
 
 head(abund_df)
+```
 
 ---
 

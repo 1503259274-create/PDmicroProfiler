@@ -134,22 +134,22 @@ plot_phage_summary(
 
 ---
 
-### 4. Query phages by host
+### 3. Viral functional annotation
+
+Retrieve functional annotation information for a selected phage family and visualize the most frequent KEGG Ortholog annotations.
 
 ```r
-phage_hits <- query_by_host(
-  host = "Firmicutes",
-  lifestyle = "Temperate",
-  specialization = "Specialist"
+family_info <- get_family_info(
+  family_name = "Myoviridae"
 )
 
-head(phage_hits)
-```
+head(family_info)
 
-Summarize the family composition of retrieved phages:
-
-```r
-plot_phage_summary(phage_hits)
+plot_family_function(
+  family_name = "Myoviridae",
+  top_n = 10,
+  plot_type = "bar"
+)
 ```
 
 ---

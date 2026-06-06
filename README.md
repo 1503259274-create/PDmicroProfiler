@@ -89,32 +89,28 @@ PDmicroProfiler includes processed data resources generated from multi-cohort PD
 
 ## Quick start
 
-### 1. Query microbial abundance
+The following examples demonstrate the four major modules of **PDmicroProfiler**.
+
+### 1. Abundance profiling
+
+Retrieve sample-level abundance data for a selected bacterial species and visualize its distribution between PD and healthy control samples.
 
 ```r
 library(PDmicroProfiler)
 
 abund_df <- get_microbe_abundance(
   name = "Bifidobacterium_catenulatum",
-  type = "bacteria"
+  type = "bacteria",
+  area = "USA"
 )
 
 head(abund_df)
-```
 
----
-
-### 2. Visualize abundance differences
-
-```r
 plot_microbe_abundance(
   name = "Bifidobacterium_catenulatum",
   type = "bacteria",
   area = "USA"
 )
-```
-
-This function can be used to visualize abundance differences between PD and healthy control samples.
 
 ---
 

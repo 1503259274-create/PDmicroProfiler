@@ -95,11 +95,11 @@ PDmicroProfiler includes processed data resources generated from multi-cohort PD
 library(PDmicroProfiler)
 
 abund_df <- get_microbe_abundance(
-  microbe = "Bifidobacterium catenulatum"
+  name = "Bifidobacterium_catenulatum",
+  type = "bacteria"
 )
 
 head(abund_df)
-```
 
 ---
 
@@ -107,7 +107,9 @@ head(abund_df)
 
 ```r
 plot_microbe_abundance(
-  microbe = "Bifidobacterium catenulatum"
+  name = "Bifidobacterium_catenulatum",
+  type = "bacteria",
+  area = "USA"
 )
 ```
 

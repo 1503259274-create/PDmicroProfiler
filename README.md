@@ -114,15 +114,23 @@ plot_microbe_abundance(
 ```
 ---
 
-### 3. Explore viral family abundance
+### 2. Phage database exploration
+
+Query phages associated with a selected bacterial host taxon and summarize their family, lifestyle, specialization, and novelty profiles.
 
 ```r
-plot_microbe_abundance(
-  microbe = "Podoviridae"
+result <- query_by_host(
+  host_level = "Host.Phylum",
+  host_value = "Firmicutes"
+)
+
+head(result)
+
+plot_phage_summary(
+  data = result,
+  plot_type = "pie"
 )
 ```
-
-This example can be used to inspect viral family-level abundance patterns.
 
 ---
 
